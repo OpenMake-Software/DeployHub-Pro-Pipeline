@@ -1,9 +1,13 @@
 #!/usr/bin/env groovy
 
+@Library('deployhub') _
+
 def app=""
 def env=""
 def cmd=""
 
+def dh = new deployhub();
+// def data = dh.moveApplication("http://rocket:8080","admin","admin","Uptime War for Tomcat;10","GLOBAL.My Pipeline.Development","Move to Integration");
 
 node {
     
